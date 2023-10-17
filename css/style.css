@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+    background: linear-gradient(120deg, white, gray);
+}
+
+.header{
+    background-color: #ea0a8e;
+    width: 100%;
+    height: 10%;
+    top: 0px;
+}
+
+.fillcontent{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    width: 30%;
+    height: 70%;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.fillcontent form{
+    padding: 40px;
+}
+
+form .textinput{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+    border-color: #adadad;
+}
+
+.textinput input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border-color: #adadad;
+    border-style: solid;
+}
+
+.textinput label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translate(-50%);
+    font-size: 16px;
+    pointer-events: none;
+}
+
+.ausgabe{
+    margin-top: 500px;
+}
+
+.btnwrapper{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    top: 0px;
+}
+
+.btn{
+    display: inline-block;
+    margin-bottom: 0;
+    font-size: 14px;
+    border-radius: 4px;
+    background-color: lightblue;
+    padding: 4px;
+}
+
+.tableheader{
+    box-shadow: 0 5px 10px gray;
+    background-color: cornflowerblue;
+    font-style: inherit;
+}
+
+.tableheader th{
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.beautofulbutton{
+    cursor: pointer;
+    position: relative;
+    padding: 22px 46px;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #ffff;
+    background: cornflowerblue;
+    border: 3px solid rgba(255, 255, 255, .2);
+    border-radius: 18px;
+}
+
+.beautofulbutton:hover{
+    z-index: 1;
+    background: linear-gradient(90deg, #f9d923, #00a19d, #0c87b7, #cb49ff, #ff6666, #f9d923);
+    background-size: 400%;
+    box-shadow: 0 0 15px rgb(2, 4, 24);
+}
+
+.beautofulbutton::before{
+    content: '';
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+    background: inherit;
+    filter: blur(36px);
+    z-index: -1;
+    opacity: 0;
+    transition: .4s ease-out;
+}
+
+.beautofulbutton:hover::before{
+    opacity: 1;
+    z-index: -1;
+}
